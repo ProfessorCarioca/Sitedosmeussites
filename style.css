@@ -1,7 +1,7 @@
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
+    --botao-azul: #87b5ec;
     --cor-de-fundo: #00030C;
 }
 
@@ -25,6 +25,7 @@ header {
     background-image: url("https://professorcarioca.github.io/fisicaflix/Aulas-de-F%C3%ADsica.gif");
     background-repeat: no-repeat;
     background-size: contain;
+    display: flex;
 }
 
 
@@ -46,10 +47,32 @@ header {
     width:15vh;
     display: grid;
     grid-template-columns: 50% 50%;
+    
 }
 
 .botao_secundario {
     background-color: transparent;
     border-radius: 5px;
     border: 2px solid var(--branco-principal)
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.container__botao a:hover {
+    color: var(--botao-azul);
+
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.rodape__logo {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+    padding: 10px;
+   display: flex;
 }
